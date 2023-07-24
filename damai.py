@@ -15,9 +15,9 @@ import time
 
 # URL = "https://piao.damai.cn/146290.html?spm=a2o6e.search.0.0.7e2b4d157EDtjL"# PC页面
 
-URL = 'http://m.damai.cn/damai/perform/item.html?projectId=146290'#手机页面
-# HOUR = 19
-MIN  = 0
+URL = 'https://m.damai.cn/damai/detail/item.html?utm=&itemId=729986881467'#手机页面
+# HOUR = 13
+MIN  = 58
 USERNAME = "13112390306"
 
 driver = webdriver.Chrome()
@@ -74,7 +74,7 @@ def buy():
         # 选择价格
         while None == price:
             # 这里选的是580票面的，如果选其他票面，修改最后的li[*]即可
-            price = choose('//*[@id="priceList"]/div/ul/li[3]')
+            price = choose('//*[@id="priceList"]/div/ul/li[980]')
         price.click()
         # 数量加1
         while None == plus:
